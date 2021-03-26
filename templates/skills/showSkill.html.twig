@@ -1,0 +1,66 @@
+{% extends 'missions/index.html.twig' %}
+
+
+{% block title %}
+    {{ skill.name }}
+{% endblock %}
+
+{% block body %}
+
+    {% include "_header.html.twig" %}
+
+    <h1 class="p-2 mt-4">{{ skill.name }} </h1>
+
+    <table class="table table-hover table-responsive text-justify align-middle mx-5" style="max-width:40em">
+        <tbody>
+        <tr>
+            <th>Name</th>
+            <td>{{ skill.name }}</td>
+        </tr>
+        <tr>
+            <th>Description</th>
+            <td>{{ skill.description }}</td>
+        </tr>
+        <tr>
+            <th><a href="{{ path('agents_index') }}" style="color: black">Agents</a> controlling "{{ skill.name }}"</th>
+            <td>
+                {% for agent in skill.agents %}
+                    <a href="{{ path('agent_details', {'id': agent.id}) }}">
+                        {{ agent.codeName }} <br>
+                    </a>
+                {% endfor %}
+            </td>
+        </tr>
+        <tr>
+            <th><a href="{{ path('app.home') }}" style="color: black">Missions </a> requiring "{{ skill.name }}"</th>
+            <td>
+                {% for mission in skill.missions %}
+                    <a href="{{ path('mission_details', {'id': mission.id}) }}">
+                        {{ mission.title }} <br>
+                    </a>
+                {% endfor %}
+            </td>
+        </tr>
+        </tbody>
+    </table>
+
+    {% include '_signInBtn.html.twig' %}
+
+    {% if is_granted('ROLE_ADMIN') %}
+        <button class="btn btn-md btn-success ms-5 mb-5">
+            <a href="{{ path('skill_add') }}" style="color: white; text-decoration: none">
+                Add a skill
+            </a>
+        </button>
+        <button class="btn btn-md btn-warning mx-1 mb-5">
+            <a href="{{ path('skill_update', {'id': skill.id}) }}" style="color: white; text-decoration: none">
+                Edit "{{ skill.name }}"
+            </a>
+        </button>
+        <button class="btn btn-md btn-danger mx-1 mb-5">
+            <a href="{{ path('skill_delete', {'id': skill.id}) }}" style="color: white; text-decoration: none">
+                Delete "{{ skill.name }}"
+            </a>
+        </button>
+    {% endif %}
+{% endblock %}

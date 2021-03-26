@@ -1,0 +1,7 @@
+{% if is_granted('ROLE_ADMIN') == false %}
+    <button class="btn btn-md btn-primary mx-4 mb-5">
+        <a href="{{ path('app_login') }}" style="color: white; text-decoration: none">
+            Sign in
+        </a>
+    </button>
+{% endif %}

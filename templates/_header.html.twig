@@ -1,0 +1,39 @@
+{% extends 'base.html.twig' %}
+
+{%  block body %}
+    <nav class="navbar navbar-expand-lg navbar-light bg-light p-2">
+        <a class="navbar-brand" href="{{ path('app.home') }}">Missions</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav">
+                <li class="nav-item active">
+                    <a class="nav-link" href="{{ path('agents_index') }}"> Agents </a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="{{ path('contacts_index') }}"> Contacts </a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="{{ path('targets_index') }}"> Targets </a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="{{ path('hideouts_index') }}"> Hideouts </a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="{{ path('skills_index') }}"> Skills </a>
+                </li>
+            </ul>
+            {% if is_granted('ROLE_ADMIN') %}
+                <span class="nav-item my-2 mx-5">
+                    <button class="btn btn-secondary btn-sm"><a href="{{ path('app_logout') }}" style="color: white; text-decoration: none">Log out</a></button>
+                </span>
+            {% endif %}
+        </div>
+    </nav>
+    <p class="mx-1 my-2" style="font-size: 0.8em; color: limegreen">
+        {% if is_granted('ROLE_ADMIN') %}
+            Connected as an administrator
+        {% endif %}
+    </p>
+{% endblock %}

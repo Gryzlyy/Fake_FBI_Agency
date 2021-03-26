@@ -1,0 +1,20 @@
+{% extends 'base.html.twig' %}
+
+{% block title %}
+    Edit a skill
+{% endblock %}
+
+{% block body %}
+    {% include '_header.html.twig' %}
+
+    <h1 class="p-2 mt-4">Editing "{{ skill.name }}"</h1>
+
+    {{ form_start(form) }}
+    {{ form_widget(form) }}
+
+    <button class="btn btn-success m-3" type="submit">Send</button>
+
+    {% include '_cancelBtn.html.twig' %}
+    {{ form_end(form) }}
+
+{% endblock %}

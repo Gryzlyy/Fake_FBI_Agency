@@ -1,0 +1,74 @@
+{% extends 'missions/index.html.twig' %}
+
+
+{% block title %}
+    {{ agent.codeName }}
+{% endblock %}
+
+{% block body %}
+
+    {% include "_header.html.twig" %}
+
+    <h1 class="p-2 mt-4">{{ agent.codeName }} - {{ agent.firstname }} {{ agent.lastname }}</h1>
+
+    <table class="table table-hover table-responsive text-justify align-middle mx-5" style="max-width:40em">
+        <tbody>
+        <tr>
+            <th>Lastname</th>
+            <td>{{ agent.lastName }}</td>
+        </tr>
+        <tr>
+            <th>Firstname</th>
+            <td>{{ agent.firstName }}</td>
+        </tr>
+        <tr>
+            <th>Codename</th>
+            <td>{{ agent.codeName }}</td>
+        </tr>
+        <tr>
+            <th>Nationality</th>
+            <td>{{ agent.nationality }}</td>
+        </tr>
+        <tr>
+            <th><a href="{{ path('skills_index') }}" style="color: black">Skills</a></th>
+            <td>
+                {% for skill in agent.skills %}
+                    <a href="{{ path('skill_details', {'id': skill.id}) }}">
+                        {{ skill.name }} <br>
+                    </a>
+                {% endfor %}
+            </td>
+        </tr>
+        <tr>
+            <th><a href="{{ path('app.home') }}" style="color: black">Missions</a></th>
+            <td>
+                {% for mission in agent.missions %}
+                    <a href="{{ path('mission_details', {'id': mission.id}) }}">
+                        {{ mission.title }} <br>
+                    </a>
+                {% endfor %}
+            </td>
+        </tr>
+        </tbody>
+    </table>
+
+    {% include '_signInBtn.html.twig' %}
+
+    {% if is_granted('ROLE_ADMIN') %}
+        <button class="btn btn-md btn-success ms-5 mb-5">
+            <a href="{{ path('agent_add') }}" style="color: white; text-decoration: none">
+                Add an agent
+            </a>
+        </button>
+        <button class="btn btn-md btn-warning mx-1 mb-5">
+            <a href="{{ path('agent_update', {'id': agent.id}) }}" style="color: white; text-decoration: none">
+                Edit "{{ agent.codeName }}"
+            </a>
+        </button>
+        <button class="btn btn-md btn-danger mx-1 mb-5">
+            <a href="{{ path('agent_delete', {'id': agent.id}) }}" style="color: white; text-decoration: none">
+                Delete "{{ agent.codeName }}"
+            </a>
+        </button>
+    {% endif %}
+{% endblock %}

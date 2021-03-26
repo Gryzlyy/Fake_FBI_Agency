@@ -1,0 +1,9 @@
+{% include '_header.html.twig' %}
+
+    {{ form_start(form) }}
+    {{ form_widget(form) }}
+<button class="btn btn-success my-3 mx-5" type="submit">Send</button>
+
+{% include '_cancelBtn.html.twig' %}
+
+    {{ form_end(form) }}

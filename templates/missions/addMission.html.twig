@@ -1,0 +1,17 @@
+{% extends 'base.html.twig' %}
+
+{% block title %}
+    New Mission
+{% endblock %}
+
+{% block body %}
+
+    {% include '_form.html.twig' %}
+
+    {% for message in app.flashes('error') %}
+        <div class="flash-notice">
+            {{ message }}
+        </div>
+    {% endfor %}
+
+{% endblock %}
