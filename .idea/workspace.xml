@@ -2,29 +2,6 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="4e635e17-b930-4b7e-badd-a60e3a26dea7" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/migrations/Version202010319095849.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/migrations/Version202010322095323.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/migrations/Version202010322095538.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/templates/_header.html.twig" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/templates/_signInBtn.html.twig" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/templates/agents/addAgent.html.twig" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/templates/agents/editAgent.html.twig" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/templates/agents/showAgent.html.twig" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/templates/contacts/addContact.html.twig" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/templates/contacts/editContact.html.twig" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/templates/contacts/showContact.html.twig" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/templates/hideouts/addHideout.html.twig" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/templates/hideouts/editHideout.html.twig" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/templates/hideouts/showHideout.html.twig" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/templates/missions/addMission.html.twig" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/templates/missions/editMission.html.twig" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/templates/missions/showMission.html.twig" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/templates/skills/addSkill.html.twig" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/templates/skills/editSkill.html.twig" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/templates/skills/showSkill.html.twig" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/templates/targets/addTarget.html.twig" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/templates/targets/editTarget.html.twig" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/templates/targets/showTarget.html.twig" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../Evaluation-Maquette/design_system.pdf" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/../Evaluation-Maquette/desktop_adobeXD.pdf" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/../Evaluation-Maquette/mobile_adobeXD.pdf" beforeDir="false" />
@@ -41,18 +18,24 @@
       <change beforePath="$PROJECT_DIR$/../Evaluation/index.html" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/../Evaluation/script.js" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/../Evaluation/style.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/fake-fbiapp.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/fake-fbiapp.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/php.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/php.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/vcs.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/composer.json" beforeDir="false" afterPath="$PROJECT_DIR$/composer.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/composer.lock" beforeDir="false" afterPath="$PROJECT_DIR$/composer.lock" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/symfony.lock" beforeDir="false" afterPath="$PROJECT_DIR$/symfony.lock" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
-  <component name="ComposerSettings" synchronizationState="SYNCHRONIZE">
+  <component name="ComposerSettings" doNotAsk="true" synchronizationState="SYNCHRONIZE">
     <pharConfigPath>$PROJECT_DIR$/composer.json</pharConfigPath>
     <execution />
   </component>
   <component name="Git.Settings">
-    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/.." />
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
   <component name="PhpWorkspaceProjectConfiguration">
     <include_path>
@@ -157,6 +140,7 @@
       <path value="$PROJECT_DIR$/vendor/laminas/laminas-code" />
       <path value="$PROJECT_DIR$/vendor/laminas/laminas-zendframework-bridge" />
       <path value="$PROJECT_DIR$/vendor/laminas/laminas-eventmanager" />
+      <path value="$PROJECT_DIR$/vendor/symfony/apache-pack" />
     </include_path>
   </component>
   <component name="ProjectId" id="1qI3G0xYnGbMI2FI9i19GRvxJoa" />
@@ -188,6 +172,7 @@
       <option name="presentableId" value="Default" />
       <updated>1616753178587</updated>
       <workItem from="1616753179864" duration="3382000" />
+      <workItem from="1616764091969" duration="207000" />
     </task>
     <servers />
   </component>
@@ -195,6 +180,10 @@
     <option name="version" value="3" />
   </component>
   <component name="WindowStateProjectService">
+    <state x="457" y="256" key="#com.intellij.fileTypes.FileTypeChooser" timestamp="1616764246988">
+      <screen x="0" y="0" width="1440" height="900" />
+    </state>
+    <state x="457" y="256" key="#com.intellij.fileTypes.FileTypeChooser/0.0.1440.900/1440.-77.1920.1080@0.0.1440.900" timestamp="1616764246988" />
     <state x="229" y="86" key="SettingsEditor" timestamp="1616753399797">
       <screen x="0" y="0" width="1440" height="900" />
     </state>
