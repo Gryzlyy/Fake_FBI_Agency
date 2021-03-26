@@ -18,6 +18,7 @@
       <change beforePath="$PROJECT_DIR$/../Evaluation/index.html" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/../Evaluation/script.js" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/../Evaluation/style.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -166,7 +167,8 @@
       <option name="presentableId" value="Default" />
       <updated>1616753178587</updated>
       <workItem from="1616753179864" duration="3382000" />
-      <workItem from="1616764091969" duration="521000" />
+      <workItem from="1616764091969" duration="651000" />
+      <workItem from="1616777505057" duration="590000" />
     </task>
     <servers />
   </component>
