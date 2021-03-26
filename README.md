@@ -5,7 +5,7 @@ C'est pour cette raison qu'il n'y a pas beaucoup de commit.
 Pour votre information, afin de faire preuve de bonne foie, je ous mets le lien du premier projet avce les commits originel : https://github.com/Gryzlyy/FBI_APP_Paul_Faguet.
 
 Identifiants de connexion en tant qu'administrateur : 
-adresse mail : admin@fbi.com
+adresse mail : admin@fbi.com,
 mot de passe : password
 
-Url du site web : 
+Url du site web : https://fakefbiagency.obicorp.fr
