@@ -6,6 +6,7 @@ use App\Repository\TargetsRepository;
 use Doctrine\Common\Collections\ArrayCollection;
 use Doctrine\Common\Collections\Collection;
 use Doctrine\ORM\Mapping as ORM;
+use Symfony\Component\Validator\Constraints as Assert;
 
 /**
  * @ORM\Entity(repositoryClass=TargetsRepository::class)
@@ -20,17 +21,26 @@ class Targets
     private $id;
 
     /**
-     * @ORM\Column(type="string", length=255)
+     * @Assert\NotBlank()
+     * @Assert\NotNull()
+     * @Assert\Length(min=2, max=30)
+     * @ORM\Column(type="string", length=30)
      */
     private $lastName;
 
     /**
-     * @ORM\Column(type="string", length=255)
+     * @Assert\NotBlank()
+     * @Assert\NotNull()
+     * @Assert\Length(min=2, max=30)
+     * @ORM\Column(type="string", length=30)
      */
     private $firstName;
 
     /**
-     * @ORM\Column(type="string", length=255)
+     * @Assert\NotBlank()
+     * @Assert\NotNull()
+     * @Assert\Length(min=2, max=30)
+     * @ORM\Column(type="string", length=30)
      */
     private $codeName;
 
@@ -40,7 +50,10 @@ class Targets
     private $birthDate;
 
     /**
-     * @ORM\Column(type="string", length=255)
+     * @Assert\NotBlank()
+     * @Assert\NotNull()
+     * @Assert\Length(min=2, max=30)
+     * @ORM\Column(type="string", length=30)
      */
     private $nationality;
 

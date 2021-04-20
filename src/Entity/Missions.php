@@ -6,6 +6,7 @@ use App\Repository\MissionsRepository;
 use Doctrine\Common\Collections\ArrayCollection;
 use Doctrine\Common\Collections\Collection;
 use Doctrine\ORM\Mapping as ORM;
+use Symfony\Component\Validator\Constraints as Assert;
 
 /**
  * @ORM\Entity(repositoryClass=MissionsRepository::class)
@@ -20,27 +21,41 @@ class Missions
     private $id;
 
     /**
-     * @ORM\Column(type="string", length=255)
+     * @Assert\NotBlank()
+     * @Assert\NotNull()
+     * @Assert\Length(min=2, max=100)
+     * @ORM\Column(type="string", length=100)
      */
     private $title;
 
     /**
+     * @Assert\NotBlank()
+     * @Assert\NotNull()
      * @ORM\Column(type="string", length=255)
      */
     private $description;
 
     /**
-     * @ORM\Column(type="string", length=255)
+     * @Assert\NotBlank()
+     * @Assert\NotNull()
+     * @Assert\Length(min=2, max=30)
+     * @ORM\Column(type="string", length=30)
      */
     private $country;
 
     /**
-     * @ORM\Column(type="string", length=255)
+     * @Assert\NotBlank()
+     * @Assert\NotNull()
+     * @Assert\Length(min=2, max=30)
+     * @ORM\Column(type="string", length=30)
      */
     private $type;
 
     /**
-     * @ORM\Column(type="string", length=255)
+     * @Assert\NotBlank()
+     * @Assert\NotNull()
+     * @Assert\Length(min=2, max=30)
+     * @ORM\Column(type="string", length=30)
      */
     private $status;
 

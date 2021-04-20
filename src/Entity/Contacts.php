@@ -6,6 +6,7 @@ use App\Repository\ContactsRepository;
 use Doctrine\Common\Collections\ArrayCollection;
 use Doctrine\Common\Collections\Collection;
 use Doctrine\ORM\Mapping as ORM;
+use Symfony\Component\Validator\Constraints as Assert;
 
 /**
  * @ORM\Entity(repositoryClass=ContactsRepository::class)
@@ -20,16 +21,25 @@ class Contacts
     private $id;
 
     /**
-     * @ORM\Column(type="string", length=255)
+     * @Assert\NotBlank()
+     * @Assert\NotNull()
+     * @Assert\Length(min=2, max=20)
+     * @ORM\Column(type="string", length=20)
      */
     private $lastName;
 
     /**
-     * @ORM\Column(type="string", length=255)
+     * @Assert\NotBlank()
+     * @Assert\NotNull()
+     * @Assert\Length(min=2, max=20)
+     * @ORM\Column(type="string", length=20)
      */
     private $firstName;
 
     /**
+     * @Assert\NotBlank()
+     * @Assert\NotNull()
+     * @Assert\Length(min=2, max=30)
      * @ORM\Column(type="string", length=255)
      */
     private $codeName;
@@ -40,6 +50,9 @@ class Contacts
     private $birthDate;
 
     /**
+     * @Assert\NotBlank()
+     * @Assert\NotNull()
+     * @Assert\Length(min=2, max=30)
      * @ORM\Column(type="string", length=255)
      */
     private $nationality;
